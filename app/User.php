@@ -38,6 +38,6 @@ class User extends Authenticatable
     ];
 
     public function tasks(){
-        return $this->belongsTo(related User::class);
+        return $this->belongsTo(User::class);
     }
 }
