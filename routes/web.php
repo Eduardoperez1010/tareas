@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/tasks'. 'TaskController@index')->name('tasks');
+Route::post('/tasks'. 'TaskController@store')->name('storage');
+Route::delete('/tasks/{id}'. 'TaskController@delete')->name('delete');
