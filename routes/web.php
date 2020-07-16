@@ -22,6 +22,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/tasks', 'TaskController@index');
+
 Route::post('/tasks', 'TaskController@store');
 Route::delete('/tasks/{id}', 'TaskController@destroy');
 
@@ -36,3 +37,7 @@ Route::delete('/tasks/{id}', 'TaskController@destroy');
 // Route::get('/tasks/edit/{id}', 'TaskController@editView')->name('tasks.edit_view');
 // Route::post('/tasks/{id}', 'TaskController@edit')->name('tasks.edit');
 // Route::delete('/tasks/{id}', 'TaskController@destroy')->name('tasks.destroy');
+// =======
+// Route::post('tasks', 'TaskController@store');
+// Route::delete('/tasks/{id}', 'TaskController@destroy');
+// >>>>>>> 06e8db4dffab02b78043bdd0f0d2a67aad9ca62c
